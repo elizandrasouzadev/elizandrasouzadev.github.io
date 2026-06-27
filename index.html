@@ -33,7 +33,6 @@
       cursor: none;
     }
 
-    /* ── CURSOR ── */
     .cursor {
       position: fixed;
       top: 0; left: 0;
@@ -60,17 +59,9 @@
       will-change: top, left;
     }
 
-    body.cursor-hover .cursor {
-      width: 16px; height: 16px;
-      background: var(--accent);
-    }
+    body.cursor-hover .cursor { width: 16px; height: 16px; }
+    body.cursor-hover .cursor-ring { width: 52px; height: 52px; border-color: rgba(107, 138, 255, 0.7); }
 
-    body.cursor-hover .cursor-ring {
-      width: 52px; height: 52px;
-      border-color: rgba(107, 138, 255, 0.7);
-    }
-
-    /* ── NAV ── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -91,11 +82,7 @@
       letter-spacing: 0.01em;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
 
     .nav-links a {
       color: var(--muted);
@@ -108,18 +95,13 @@
 
     .nav-links a:hover { color: var(--ink); }
 
-    /* ── SECTIONS ── */
     section {
       max-width: 720px;
       margin: 0 auto;
       padding: 6rem 2rem;
     }
 
-    /* ── HERO ── */
-    #hero {
-      padding-top: 10rem;
-      padding-bottom: 5rem;
-    }
+    #hero { padding-top: 10rem; padding-bottom: 5rem; }
 
     .hero-eyebrow {
       font-size: 0.8rem;
@@ -138,10 +120,7 @@
       margin-bottom: 1.5rem;
     }
 
-    .hero-name em {
-      font-style: italic;
-      color: var(--accent);
-    }
+    .hero-name em { font-style: italic; color: var(--accent); }
 
     .hero-desc {
       font-size: 1.05rem;
@@ -152,16 +131,9 @@
       font-weight: 300;
     }
 
-    .hero-desc strong {
-      color: var(--ink);
-      font-weight: 500;
-    }
+    .hero-desc strong { color: var(--ink); font-weight: 500; }
 
-    .cta-row {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
+    .cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
 
     .btn {
       display: inline-block;
@@ -174,24 +146,11 @@
       cursor: none;
     }
 
-    .btn-primary {
-      background: var(--ink);
-      color: var(--bg);
-    }
-
+    .btn-primary { background: var(--ink); color: var(--bg); }
     .btn-primary:hover { background: var(--accent); color: #fff; }
+    .btn-ghost { border: 1px solid var(--border); color: var(--muted); }
+    .btn-ghost:hover { border-color: var(--ink); color: var(--ink); }
 
-    .btn-ghost {
-      border: 1px solid var(--border);
-      color: var(--muted);
-    }
-
-    .btn-ghost:hover {
-      border-color: var(--ink);
-      color: var(--ink);
-    }
-
-    /* ── DIVIDER ── */
     .divider {
       border: none;
       border-top: 1px solid var(--border);
@@ -199,7 +158,6 @@
       margin: 0 auto;
     }
 
-    /* ── SECTION LABEL ── */
     .section-label {
       font-size: 0.75rem;
       letter-spacing: 0.12em;
@@ -209,7 +167,6 @@
       margin-bottom: 2.5rem;
     }
 
-    /* ── SOBRE ── */
     #sobre p {
       font-size: 1rem;
       line-height: 1.8;
@@ -220,7 +177,6 @@
 
     #sobre p strong { font-weight: 500; }
 
-    /* ── SKILLS ── */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -238,32 +194,15 @@
       transition: opacity 0.4s ease, transform 0.4s ease, background 0.2s ease;
     }
 
-    .skill-item.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .skill-item.visible { opacity: 1; transform: translateY(0); }
+    .skill-item:hover { background: #1A1A18; }
 
-    .skill-item:hover {
-      background: #1A1A18;
-    }
-
-    .skill-name {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--ink);
-      margin-bottom: 0.25rem;
-    }
-
-    .skill-level {
-      font-size: 0.75rem;
-      color: var(--muted);
-      letter-spacing: 0.04em;
-    }
+    .skill-name { font-size: 0.9rem; font-weight: 500; color: var(--ink); margin-bottom: 0.25rem; }
+    .skill-level { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.04em; }
 
     .skill-dot {
       display: inline-block;
-      width: 6px;
-      height: 6px;
+      width: 6px; height: 6px;
       border-radius: 50%;
       margin-right: 0.4rem;
       vertical-align: middle;
@@ -274,7 +213,6 @@
     .dot-strong { background: var(--accent); }
     .dot-growing { background: var(--muted); }
 
-    /* ── PROJETOS ── */
     .projects-list {
       display: flex;
       flex-direction: column;
@@ -307,19 +245,9 @@
       margin-bottom: 0.5rem;
     }
 
-    .project-title {
-      font-size: 1rem;
-      font-weight: 500;
-      color: var(--ink);
-      margin-bottom: 0.35rem;
-    }
+    .project-title { font-size: 1rem; font-weight: 500; color: var(--ink); margin-bottom: 0.35rem; }
 
-    .project-desc {
-      font-size: 0.875rem;
-      color: var(--muted);
-      line-height: 1.6;
-      font-weight: 300;
-    }
+    .project-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.6; font-weight: 300; }
 
     .project-arrow {
       color: var(--muted);
@@ -328,36 +256,16 @@
       transition: transform 0.2s, color 0.2s;
     }
 
-    .project-card:hover .project-arrow {
-      transform: translate(3px, -3px);
-      color: var(--accent);
-    }
+    .project-card:hover .project-arrow { transform: translate(3px, -3px); color: var(--accent); }
 
-    .project-placeholder {
-      background: var(--bg);
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-
-    .project-placeholder p {
-      font-size: 0.875rem;
-      color: var(--muted);
-      font-style: italic;
-    }
-
-    /* ── SCROLL REVEAL ── */
     .reveal {
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.55s ease, transform 0.55s ease;
     }
 
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ── CONTATO ── */
     #contato p {
       font-size: 1rem;
       color: var(--muted);
@@ -390,15 +298,9 @@
     }
 
     .contact-link:last-child { border-bottom: none; }
-
-    .contact-link:hover {
-      background: #1A1A18;
-      padding-left: 1.9rem;
-    }
-
+    .contact-link:hover { background: #1A1A18; padding-left: 1.9rem; }
     .contact-link span { color: var(--muted); font-size: 0.875rem; }
 
-    /* ── FOOTER ── */
     footer {
       max-width: 720px;
       margin: 0 auto;
@@ -409,12 +311,8 @@
       border-top: 1px solid var(--border);
     }
 
-    footer p {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
+    footer p { font-size: 0.8rem; color: var(--muted); }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       nav { padding: 1rem 1.25rem; }
       .nav-links { gap: 1.25rem; }
@@ -425,7 +323,6 @@
       body { cursor: auto; }
     }
 
-    /* ── REDUCED MOTION ── */
     @media (prefers-reduced-motion: reduce) {
       .reveal, .skill-item { opacity: 1 !important; transform: none !important; transition: none !important; }
       .cursor, .cursor-ring { display: none; }
@@ -436,11 +333,9 @@
 
 <body>
 
-  <!-- CURSOR -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-logo">Elizandra</a>
     <ul class="nav-links">
@@ -451,7 +346,6 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
   <section id="hero">
     <p class="hero-eyebrow">Front-End · Shopify · Marketing Digital</p>
     <h1 class="hero-name">Olá, sou<br><em>Elizandra.</em></h1>
@@ -466,7 +360,6 @@
 
   <hr class="divider" />
 
-  <!-- SOBRE -->
   <section id="sobre">
     <p class="section-label reveal">Sobre</p>
     <p class="reveal">
@@ -482,7 +375,6 @@
 
   <hr class="divider" />
 
-  <!-- SKILLS -->
   <section id="skills">
     <p class="section-label reveal">Skills</p>
     <div class="skills-grid">
@@ -515,44 +407,33 @@
 
   <hr class="divider" />
 
-  <!-- PROJETOS -->
   <section id="projetos">
     <p class="section-label reveal">Projetos</p>
     <div class="projects-list reveal">
-      <a href="https://github.com/elizandrasouzadev/shopify-featured-product-section" class="project-card" target="_blank" rel="noopener">
-        <a href="https://elizandrasouzadev.github.io/shopify-collection-filter" class="project-card" target="_blank" rel="noopener">
-  <div>
-    <p class="project-tag">HTML · CSS · JavaScript</p>
-    <p class="project-title">Coleção com Filtro Interativo — Alma Casa</p>
-    <p class="project-desc">Página de coleção com filtro por categoria em JavaScript puro. Cards animados, contador dinâmico e hover com micro-interações — sem frameworks ou dependências externas.</p>
-  </div>
-  <span class="project-arrow">↗</span>
-</a>
-  <div>
-    <p class="project-tag">Shopify · Liquid · CSS</p>
-    <p class="project-title">Seção Featured Product — Casa & Decoração</p>
-    <p class="project-desc">Seção customizada criada do zero para tema Shopify Horizon. Layout responsivo com imagem, badge e preço dinâmicos — editável pelo admin sem tocar no código.</p>
-  </div>
-  <span class="project-arrow">↗</span>
-</a>
-      <!--
-        TEMPLATE para adicionar um projeto real:
 
-        <a href="LINK_DO_PROJETO" class="project-card" target="_blank" rel="noopener">
-          <div>
-            <p class="project-tag">Shopify · Liquid</p>
-            <p class="project-title">Nome do projeto</p>
-            <p class="project-desc">Descrição curta do que foi feito e qual problema resolve.</p>
-          </div>
-          <span class="project-arrow">↗</span>
-        </a>
-      -->
+      <a href="https://elizandrasouzadev.github.io/shopify-collection-filter" class="project-card" target="_blank" rel="noopener">
+        <div>
+          <p class="project-tag">HTML · CSS · JavaScript</p>
+          <p class="project-title">Coleção com Filtro Interativo — Alma Casa</p>
+          <p class="project-desc">Página de coleção com filtro por categoria em JavaScript puro. Cards animados, contador dinâmico e hover com micro-interações — sem frameworks ou dependências externas.</p>
+        </div>
+        <span class="project-arrow">↗</span>
+      </a>
+
+      <a href="https://github.com/elizandrasouzadev/shopify-featured-product-section" class="project-card" target="_blank" rel="noopener">
+        <div>
+          <p class="project-tag">Shopify · Liquid · CSS</p>
+          <p class="project-title">Seção Featured Product — Casa & Decoração</p>
+          <p class="project-desc">Seção customizada criada do zero para tema Shopify Horizon. Layout responsivo com imagem, badge e preço dinâmicos — editável pelo admin sem tocar no código.</p>
+        </div>
+        <span class="project-arrow">↗</span>
+      </a>
+
     </div>
   </section>
 
   <hr class="divider" />
 
-  <!-- CONTATO -->
   <section id="contato">
     <p class="section-label reveal">Contato</p>
     <p class="reveal">Aberta a conversas sobre estágio, projetos freelance ou colaborações em Shopify e front-end.</p>
@@ -572,14 +453,12 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2026 Elizandra</p>
     <p>Feito com HTML, CSS & vontade de aprender.</p>
   </footer>
 
   <script>
-    // ── CURSOR CUSTOMIZADO ──
     const cursor = document.getElementById('cursor');
     const ring = document.getElementById('cursorRing');
     let mouseX = 0, mouseY = 0;
@@ -591,7 +470,6 @@
       cursor.style.top = mouseY + 'px';
     });
 
-    // Ring segue com leve atraso via requestAnimationFrame
     let ringX = 0, ringY = 0;
     function animateRing() {
       ringX += (mouseX - ringX) * 0.12;
@@ -602,14 +480,12 @@
     }
     animateRing();
 
-    // Hover em elementos clicáveis
     const clickables = document.querySelectorAll('a, button, .skill-item');
     clickables.forEach(el => {
       el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
       el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
     });
 
-    // ── SCROLL REVEAL (seções e parágrafos) ──
     const revealEls = document.querySelectorAll('.reveal');
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -622,7 +498,6 @@
 
     revealEls.forEach(el => revealObserver.observe(el));
 
-    // ── SKILLS EM SEQUÊNCIA ──
     const skillItems = document.querySelectorAll('.skill-item');
     const skillObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
