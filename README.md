@@ -1,2 +1,5 @@
-# elizandrasouzadev.github.io
-Portfólio pessoal desenvolvido em HTML e CSS puro, com animações em JavaScript.
+# Elizandra Souza — Portfólio
+
+Portfólio pessoal desenvolvido em HTML, CSS e JavaScript puro, sem frameworks ou dependências externas.
+
+🔗 [Ver online](https://elizandrasouzadev.github.io)
