@@ -214,8 +214,8 @@
     .dot-growing { background: var(--muted); }
 
     .projects-list {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 1px;
       background: var(--border);
       border: 1px solid var(--border);
@@ -319,6 +319,7 @@
       section { padding: 4rem 1.25rem; }
       #hero { padding-top: 7rem; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
+      .projects-list { grid-template-columns: 1fr; }
       .cursor, .cursor-ring { display: none; }
       body { cursor: auto; }
     }
@@ -447,7 +448,7 @@
         <span class="project-arrow">↗</span>
       </a>
 
-      <a href="https://github.com/elizandrasouzadev/shopify-snippets-library" class="project-card" target="_blank" rel="noopener">
+      <a href="https://github.com/elizandrasouzadev/shopify-liquid-snippets" class="project-card" target="_blank" rel="noopener">
         <div>
           <p class="project-tag">Shopify · Liquid</p>
           <p class="project-title">Shopify Snippets Library</p>
